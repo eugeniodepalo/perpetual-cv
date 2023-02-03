@@ -1,3 +1,5 @@
+"use client"
+
 import { GitHub, EmailOutlined } from "@mui/icons-material"
 import {
   Toolbar,

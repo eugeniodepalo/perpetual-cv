@@ -10,7 +10,7 @@ import {
   TimelineContent,
   Timeline,
 } from "@mui/lab"
-import { Avatar, Link, Typography } from "@mui/material"
+import { Link, Typography } from "@mui/material"
 import NextLink from "next/link"
 
 export function Experience() {
@@ -19,7 +19,7 @@ export function Experience() {
   return (
     <Timeline position="alternate">
       {data.experience.map((item, index) => (
-        <TimelineItem>
+        <TimelineItem key={index}>
           <TimelineOppositeContent color="text.secondary">
             {item.date}
           </TimelineOppositeContent>
