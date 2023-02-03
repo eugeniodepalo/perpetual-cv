@@ -13,13 +13,16 @@ import {
 import { FunctionComponent } from "react"
 import NextLink from "next/link"
 import avatar from "@/assets/avatar.png"
+import { useData } from "@/hooks/use-data"
 
 export const Header: FunctionComponent = () => {
+  const data = useData()
+
   return (
     <AppBar position="sticky">
       <Toolbar>
         <Avatar
-          alt="Eugenio Depalo"
+          alt={data.name}
           src={avatar.src}
           sx={{ mr: 3, my: 2, height: 60, width: 60 }}
         />
@@ -29,19 +32,22 @@ export const Header: FunctionComponent = () => {
           sx={{
             color: "inherit",
             textDecoration: "none",
+            fontWeight: "bold",
           }}
         >
-          Eugenio Depalo
+          {data.name}
         </Typography>
-
         <Box ml="auto">
           <Stack direction="row" spacing={2} alignItems="center">
-            <NextLink href="https://github.com/eugeniodepalo" target="_blank">
+            <NextLink
+              href={`https://github.com/${data.github}`}
+              target="_blank"
+            >
               <IconButton>
                 <GitHub fontSize="large" />
               </IconButton>
             </NextLink>
-            <NextLink href="mailto:eugeniodepalo@gmail.com">
+            <NextLink href={`mailto:${data.email}`}>
               <IconButton>
                 <EmailOutlined fontSize="large" />
               </IconButton>

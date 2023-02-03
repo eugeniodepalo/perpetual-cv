@@ -6,6 +6,13 @@ import zapnitoLogo from "@/assets/zapnito.svg"
 import britishGasLogo from "@/assets/british-gas.svg"
 
 export const data = {
+  name: "Eugenio Depalo",
+  title: "Senior Full-stack Software Engineer",
+  email: "eugeniodepalo@gmail.com",
+  github: "eugeniodepalo",
+  description1: "I love intellectual challenges that just won't let me sleep.",
+  description2:
+    "I'm currently based in London. Open to both remote and central London contracting gigs.",
   clients: [
     {
       name: "Featurist",

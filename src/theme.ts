@@ -1,5 +1,8 @@
 import { createTheme } from "@mui/material"
 
+const primaryColor = "rgb(245, 245, 245)"
+const secondaryColor = "rgb(255, 215, 79)"
+
 export const theme = createTheme({
   typography: {
     fontFamily: "monospace",
@@ -7,10 +10,10 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "rgb(245, 245, 245)",
+      main: primaryColor,
     },
     secondary: {
-      main: "rgb(255, 215, 79)",
+      main: secondaryColor,
     },
   },
   components: {
@@ -18,7 +21,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           "&:hover": {
-            backgroundColor: "rgb(255, 215, 79)",
+            backgroundColor: secondaryColor,
           },
         },
       },
@@ -27,7 +30,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           "&:hover": {
-            backgroundColor: "rgb(255, 215, 79)",
+            backgroundColor: secondaryColor,
           },
         },
       },

@@ -4,7 +4,8 @@ import { Layout } from "@/components/layout"
 
 const font = Roboto({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["300", "400", "500", "700"],
+  preload: true,
 })
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {

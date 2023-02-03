@@ -19,14 +19,13 @@ export const Page: FunctionComponent = () => {
       <Card sx={{ mb: 3 }}>
         <CardContent>
           <Typography variant="h5" sx={{ my: 2, fontFamily: "monospace" }}>
-            Senior Full-stack Software Engineer
+            {data.title}
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            I love intellectual challenges that just won't let me sleep.
+            {data.description1}
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            I'm currently based in London. Open to both remote and central
-            London contracting gigs.
+            {data.description2}
           </Typography>
           <Section title="My Clients">
             <Grid container spacing={2}>
