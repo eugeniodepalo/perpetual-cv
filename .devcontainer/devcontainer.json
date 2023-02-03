@@ -1,0 +1,14 @@
+{
+  "name": "perpetualCV",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "bash -i .devcontainer/post-create.sh",
+  "extensions": ["GitHub.copilot", "eamodio.gitlens", "esbenp.prettier-vscode"],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}
