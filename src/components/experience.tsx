@@ -27,7 +27,7 @@ export function Experience() {
             <TimelineDot color={index === 0 ? "secondary" : "primary"} />
             <TimelineConnector sx={{ height: 100 }} />
           </TimelineSeparator>
-          <TimelineContent>
+          <TimelineContent overflow="hidden" textOverflow="ellipsis">
             {item.url ? (
               <NextLink href={item.url} passHref legacyBehavior>
                 <Link

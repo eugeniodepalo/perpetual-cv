@@ -18,7 +18,7 @@ export const Page: FunctionComponent = () => {
       <Header />
       <Card sx={{ mb: 3 }}>
         <CardContent>
-          <Typography variant="h5" sx={{ my: 2, fontFamily: "monospace" }}>
+          <Typography variant="h5" my={2} fontFamily="monospace">
             {data.title}
           </Typography>
           <Typography variant="h6" color="text.secondary">
@@ -30,7 +30,7 @@ export const Page: FunctionComponent = () => {
           <Section title="My Clients">
             <Grid container spacing={2}>
               {data.clients.map((client, index) => (
-                <Grid md={3} key={index}>
+                <Grid xs={12} md={3} key={index}>
                   <Button
                     variant="contained"
                     color="primary"

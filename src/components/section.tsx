@@ -12,11 +12,9 @@ export const Section: FunctionComponent<
     <Box>
       <Typography
         variant="h5"
-        sx={{
-          borderTop: `1px dashed ${theme.palette.primary.dark}`,
-          py: 4,
-          mt: 4,
-        }}
+        borderTop={`1px dashed ${theme.palette.primary.dark}`}
+        py={4}
+        mt={4}
       >
         {title}
       </Typography>

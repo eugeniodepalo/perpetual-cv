@@ -29,11 +29,9 @@ export const Header: FunctionComponent = () => {
         <Typography
           variant="h5"
           noWrap
-          sx={{
-            color: "inherit",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
+          color="inherit"
+          fontWeight="bold"
+          sx={{ textDecoration: "none" }}
         >
           {data.name}
         </Typography>
