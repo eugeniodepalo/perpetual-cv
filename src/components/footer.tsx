@@ -17,7 +17,7 @@ export const Footer: FunctionComponent = () => {
       }}
     >
       <Typography variant="body2" color="text.secondary" mb={2} component="div">
-        Like the format of this CV? Fork it on
+        Like the format of this CV? Fork it on{" "}
         <NextLink
           href="https://github.com/eugeniodepalo/perpetual-cv"
           passHref
