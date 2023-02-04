@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Typography, useTheme } from "@mui/material"
+import { Typography, useTheme } from "@mui/material"
 import { FunctionComponent, PropsWithChildren } from "react"
 
 export const Section: FunctionComponent<
@@ -9,7 +9,7 @@ export const Section: FunctionComponent<
   const theme = useTheme()
 
   return (
-    <Box>
+    <>
       <Typography
         variant="h5"
         borderTop={`1px dashed ${theme.palette.primary.dark}`}
@@ -19,6 +19,6 @@ export const Section: FunctionComponent<
         {title}
       </Typography>
       {children}
-    </Box>
+    </>
   )
 }
