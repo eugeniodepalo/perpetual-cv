@@ -7,9 +7,6 @@ const font = Roboto_Mono({
   preload: true,
 })
 
-const primaryColor = "rgb(245, 245, 245)"
-const secondaryColor = "rgb(255, 215, 79)"
-
 export const theme = createTheme({
   typography: {
     fontFamily: font.style.fontFamily,
@@ -17,29 +14,39 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: primaryColor,
+      main: "rgb(245, 245, 245)",
     },
     secondary: {
-      main: secondaryColor,
+      main: "rgb(255, 215, 79)",
     },
   },
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.text.primary,
+          "&:hover": {
+            color: theme.palette.secondary.main,
+          },
+        }),
+      },
+    },
     MuiButton: {
       styleOverrides: {
-        root: {
+        root: ({ theme }) => ({
           "&:hover": {
-            backgroundColor: secondaryColor,
+            backgroundColor: theme.palette.secondary.main,
           },
-        },
+        }),
       },
     },
     MuiIconButton: {
       styleOverrides: {
-        root: {
+        root: ({ theme }) => ({
           "&:hover": {
-            backgroundColor: secondaryColor,
+            backgroundColor: theme.palette.secondary.main,
           },
-        },
+        }),
       },
     },
   },

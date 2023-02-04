@@ -17,10 +17,10 @@ export const Footer: FunctionComponent = () => {
           passHref
           legacyBehavior
         >
-          <Link color="primary.dark">GitHub</Link>
+          <Link>GitHub</Link>
         </NextLink>
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography color="text.secondary" variant="body2">
         Made with ❤️ by {data.name}
       </Typography>
     </Box>

@@ -18,7 +18,9 @@ export const Layout: FunctionComponent<PropsWithChildren<Props>> = ({
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <DataProvider value={data}>
-        <Container maxWidth="lg">{children}</Container>
+        <Container maxWidth="lg" disableGutters>
+          {children}
+        </Container>
       </DataProvider>
     </ThemeProvider>
   )

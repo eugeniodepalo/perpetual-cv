@@ -30,12 +30,7 @@ export function Experience() {
           <TimelineContent overflow="hidden" textOverflow="ellipsis">
             {item.url ? (
               <NextLink href={item.url} passHref legacyBehavior>
-                <Link
-                  color="text.primary"
-                  typography="h6"
-                  lineHeight={1}
-                  target="_blank"
-                >
+                <Link typography="h6" lineHeight={1} target="_blank">
                   {item.company}
                 </Link>
               </NextLink>

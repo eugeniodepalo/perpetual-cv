@@ -1,6 +1,14 @@
 "use client"
 
-import { Card, CardContent, Typography, Button, Box, Chip } from "@mui/material"
+import {
+  Card,
+  CardContent,
+  Typography,
+  Button,
+  Box,
+  Chip,
+  useTheme,
+} from "@mui/material"
 import Grid from "@mui/material/Unstable_Grid2"
 import { FunctionComponent } from "react"
 import { Experience } from "./experience"
@@ -12,6 +20,7 @@ import { useData } from "@/hooks/use-data"
 
 export const Page: FunctionComponent = () => {
   const data = useData()
+  const theme = useTheme()
 
   return (
     <>
@@ -44,7 +53,7 @@ export const Page: FunctionComponent = () => {
                         alt={client.name}
                         fill
                         style={{ objectFit: "contain" }}
-                        sizes="16vw"
+                        sizes={`(max-width: ${theme.breakpoints.values.md}${theme.breakpoints.unit}) 100vw, 16vw`}
                       />
                     </Box>
                   </Button>

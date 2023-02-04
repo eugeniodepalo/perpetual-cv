@@ -1,6 +1,6 @@
 import featuristLogo from "@/assets/featurist.svg"
 import kayakoLogo from "@/assets/kayako.svg"
-import smartLogo from "@/assets/smart.png"
+import smartLogo from "@/assets/smart.webp"
 import tallariumLogo from "@/assets/tallarium.svg"
 import zapnitoLogo from "@/assets/zapnito.svg"
 import britishGasLogo from "@/assets/british-gas.svg"
