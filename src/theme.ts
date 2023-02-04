@@ -5,7 +5,6 @@ const font = Roboto_Mono({
   subsets: ["latin"],
   style: "normal",
   weight: ["400", "500", "700"],
-  preload: true,
 })
 
 export const theme = createTheme({
