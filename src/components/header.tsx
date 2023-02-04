@@ -38,19 +38,15 @@ export const Header: FunctionComponent = () => {
           <Stack direction="row" spacing={2} alignItems="center">
             <NextLink
               href={`https://github.com/${data.github}`}
-              target="_blank"
-              aria-label="GitHub"
+              passHref
+              legacyBehavior
             >
-              <IconButton LinkComponent="div">
+              <IconButton href="" target="_blank" aria-label="GitHub">
                 <GitHub fontSize="large" />
               </IconButton>
             </NextLink>
-            <NextLink
-              href={`mailto:${data.email}`}
-              target="_blank"
-              aria-label="Email"
-            >
-              <IconButton LinkComponent="div">
+            <NextLink href={`mailto:${data.email}`} passHref legacyBehavior>
+              <IconButton href="" target="_blank" aria-label="Email">
                 <EmailOutlined fontSize="large" />
               </IconButton>
             </NextLink>
