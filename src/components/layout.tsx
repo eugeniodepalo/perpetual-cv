@@ -15,13 +15,11 @@ export const Layout: FunctionComponent<PropsWithChildren<Props>> = ({
   data,
 }) => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
-      <ThemeProvider theme={theme}>
-        <DataProvider value={data}>
-          <Container maxWidth="lg">{children}</Container>
-        </DataProvider>
-      </ThemeProvider>
-    </>
+      <DataProvider value={data}>
+        <Container maxWidth="lg">{children}</Container>
+      </DataProvider>
+    </ThemeProvider>
   )
 }

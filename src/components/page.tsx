@@ -18,7 +18,7 @@ export const Page: FunctionComponent = () => {
       <Header />
       <Card sx={{ mb: 3 }}>
         <CardContent>
-          <Typography variant="h5" my={2} fontFamily="monospace">
+          <Typography variant="h5" my={2}>
             {data.title}
           </Typography>
           <Typography variant="h6" color="text.secondary">

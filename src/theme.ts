@@ -1,11 +1,18 @@
 import { createTheme } from "@mui/material"
+import { Roboto_Mono } from "@next/font/google"
+
+const font = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  preload: true,
+})
 
 const primaryColor = "rgb(245, 245, 245)"
 const secondaryColor = "rgb(255, 215, 79)"
 
 export const theme = createTheme({
   typography: {
-    fontFamily: "monospace",
+    fontFamily: font.style.fontFamily,
     fontSize: 18,
   },
   palette: {
