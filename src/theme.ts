@@ -3,7 +3,7 @@ import { Roboto_Mono } from "@next/font/google"
 
 const font = Roboto_Mono({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["400", "500", "700"],
   preload: true,
 })
 
