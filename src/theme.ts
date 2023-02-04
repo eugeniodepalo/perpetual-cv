@@ -25,6 +25,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: ({ theme }) => ({
           color: theme.palette.text.primary,
+          textDecorationColor: theme.palette.text.secondary,
           "&:hover": {
             color: theme.palette.secondary.main,
           },
