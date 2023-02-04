@@ -27,7 +27,7 @@ export const data = {
     {
       name: "Smart",
       logo: smartLogo,
-      url: "https://smart.co.uk",
+      url: "https://smart.co",
     },
     {
       name: "Tallarium",
