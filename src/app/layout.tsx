@@ -6,7 +6,7 @@ const font = Roboto_Mono({
   subsets: ["latin"],
   style: "normal",
   weight: ["400", "500", "700"],
-  display: "auto",
+  display: "block",
 })
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
