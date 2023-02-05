@@ -4,6 +4,7 @@ import smartLogo from "@/assets/smart.webp"
 import tallariumLogo from "@/assets/tallarium.svg"
 import zapnitoLogo from "@/assets/zapnito.svg"
 import britishGasLogo from "@/assets/british-gas.svg"
+import safetytoolboxLogo from "@/assets/safetytoolbox.webp"
 
 export const data = {
   name: "Eugenio Depalo",
@@ -33,6 +34,11 @@ export const data = {
       name: "Tallarium",
       logo: tallariumLogo,
       url: "https://tallarium.com",
+    },
+    {
+      name: "SafetyToolbox",
+      logo: safetytoolboxLogo,
+      url: "https://safetytoolbox.co.uk",
     },
     {
       name: "Zapnito",
