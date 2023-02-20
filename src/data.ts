@@ -13,7 +13,7 @@ export const data = {
   github: "eugeniodepalo",
   description2: "I love intellectual challenges that just won't let me sleep.",
   description1:
-    "I have worked with many clients in the UK, both small and large, and either as a full-stack developer or a front-end specialist." +
+    "I have worked with many clients in the UK, both small and large, and either as a full-stack developer or a front-end specialist. " +
     "I have extensive experience in both worlds but I've gravitated more towards front-end technologies in recent years.",
   clients: [
     {
