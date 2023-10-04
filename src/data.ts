@@ -11,7 +11,6 @@ export const data = {
   title: "Senior Full-stack Software Engineer",
   email: "eugeniodepalo@gmail.com",
   github: "eugeniodepalo",
-  description1: "Currently open to both remote and central London contracting gigs.",
   description2:
     "I have worked with many clients in the UK, both small and large, and either as a full-stack developer or a front-end specialist. " +
     "I have extensive experience in both worlds but I've gravitated more towards front-end technologies in recent years.",
@@ -96,9 +95,15 @@ export const data = {
   ],
   experience: [
     {
+      company: "Smart",
+      role: "Senior React engineer",
+      date: "2023 - present",
+      url: "https://smart.co",
+    },
+    {
       company: "Freelance",
       role: "Senior full-stack developer",
-      date: "2016 - present",
+      date: "2016 - 2023",
     },
     {
       company: "AlphaSights",
