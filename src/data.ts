@@ -11,6 +11,7 @@ export const data = {
   title: "Senior Full-stack Software Engineer",
   email: "eugeniodepalo@gmail.com",
   github: "eugeniodepalo",
+  description1: null,
   description2:
     "I have worked with many clients in the UK, both small and large, and either as a full-stack developer or a front-end specialist. " +
     "I have extensive experience in both worlds but I've gravitated more towards front-end technologies in recent years.",
