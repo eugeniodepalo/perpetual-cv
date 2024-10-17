@@ -45,6 +45,9 @@ export const Page: FunctionComponent = () => {
               ))}
             </Grid>
           </Section>
+          <Section title="My Experience">
+            <Experience />
+          </Section>
           <Section title="My Clients">
             <Grid container spacing={2}>
               {data.clients.map((client, index) => (
@@ -69,9 +72,6 @@ export const Page: FunctionComponent = () => {
                 </Grid>
               ))}
             </Grid>
-          </Section>
-          <Section title="My Experience">
-            <Experience />
           </Section>
         </CardContent>
       </Card>
