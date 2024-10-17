@@ -33,7 +33,7 @@ export const Page: FunctionComponent = () => {
           <Typography variant="h6" color="text.secondary" gutterBottom>
             {data.description1}
           </Typography>
-          <Typography variant="h6" color="text.secondary" fontWeight="normal">
+          <Typography variant="h6" color="text.secondary" fontWeight="light">
             {data.description2}
           </Typography>
           <Section title="My Skills">
