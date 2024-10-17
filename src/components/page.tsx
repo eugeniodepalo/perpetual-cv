@@ -30,7 +30,7 @@ export const Page: FunctionComponent = () => {
           <Typography variant="h5" my={2}>
             {data.title}
           </Typography>
-          <Typography variant="h6" color="text.secondary">
+          <Typography variant="h6" color="text.secondary" gutterBottom>
             {data.description1}
           </Typography>
           <Typography variant="h6" color="text.secondary">
