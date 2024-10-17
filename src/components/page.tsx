@@ -36,6 +36,15 @@ export const Page: FunctionComponent = () => {
           <Typography variant="h6" color="text.secondary" fontWeight="normal">
             {data.description2}
           </Typography>
+          <Section title="My Skills">
+            <Grid container spacing={2}>
+              {data.skills.map((skill, index) => (
+                <Grid width="auto" key={index}>
+                  <Chip label={skill} />
+                </Grid>
+              ))}
+            </Grid>
+          </Section>
           <Section title="My Clients">
             <Grid container spacing={2}>
               {data.clients.map((client, index) => (
@@ -57,15 +66,6 @@ export const Page: FunctionComponent = () => {
                       />
                     </Box>
                   </Button>
-                </Grid>
-              ))}
-            </Grid>
-          </Section>
-          <Section title="My Skills">
-            <Grid container spacing={2}>
-              {data.skills.map((skill, index) => (
-                <Grid width="auto" key={index}>
-                  <Chip label={skill} />
                 </Grid>
               ))}
             </Grid>
