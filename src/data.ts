@@ -11,10 +11,12 @@ export const data = {
   title: "Senior Full-stack Software Engineer",
   email: "eugeniodepalo@gmail.com",
   github: "eugeniodepalo",
-  description1: null,
+  description1: 
+    "I am a versatile and curious engineer who thrives on solving complex problems. " +
+    "Always eager to learn and share knowledge, I immerse myself deeply into every intellectual challenge.",
   description2:
-    "I have worked with many clients in the UK, both small and large, and either as a full-stack developer or a front-end specialist. " +
-    "I have extensive experience in both worlds but I've gravitated more towards front-end technologies in recent years.",
+    "With extensive experience building products and taking them from concept to MVP, I've worked with a variety of clients and companies, both large and small. " +
+    "While I have a full-stack background, I’ve been focusing more on front-end technologies in recent years. My passion lies in building impactful products and helping teams succeed.",
   clients: [
     {
       name: "Featurist",
