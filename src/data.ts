@@ -12,7 +12,7 @@ export const data = {
   email: "eugeniodepalo@gmail.com",
   github: "eugeniodepalo",
   description1: 
-    "I am a versatile and curious engineer who thrives on solving complex problems, " +
+    "I am a passionate engineer who thrives on solving complex problems, " +
     "and is always eager to learn and share knowledge.",
   description2:
     "With extensive experience building products and taking them from concept to MVP, " +
