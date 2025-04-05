@@ -17,6 +17,7 @@
     "Next.js",
     "Remix",
     "Redux",
+    "MUI",
     "Ember.js",
     "Ruby",
     "Rails",
@@ -26,19 +27,13 @@
     "Terraform",
     "AWS",
     "PHP",
-    "Bootstrap",
     "Firebase",
-    "Redis",
-    "jQuery",
-    "Backbone",
-    "AngularJS",
-    ".NET"
+    "Redis"
   ],
   "learning": [
     "AI",
     "OS design",
     "Rust",
-    ".NET",
     "Embedded Systems"
   ],
   "languages": [
