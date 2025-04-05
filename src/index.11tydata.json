@@ -165,7 +165,7 @@
     {
       "company": "Tallarium",
       "role": "Senior Frontend Developer (Contract)",
-      "date": "Mar 2015 - Nov 2015",
+      "date": "2015",
       "url": "https://tallarium.com",
       "technologies": ["Ember"],
       "achievements": [
@@ -177,7 +177,7 @@
     {
       "company": "GBH Design",
       "role": "Lead Developer (Contract)",
-      "date": "Feb 2015 - Mar 2015",
+      "date": "2015",
       "technologies": ["Ember", "AWS"],
       "achievements": [
         "Architected and implemented high-performance grid layouting system and client-side search engine using Lunr.js that maintained sub-100ms response times with 10,000+ items",
