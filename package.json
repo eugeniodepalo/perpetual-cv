@@ -2,9 +2,9 @@
   "name": "perpetual-cv",
   "private": true,
   "version": "0.1.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "dev": "eleventy --serve --config .eleventy.js",
+    "dev": "eleventy --serve",
     "build": "eleventy",
     "preview": "eleventy --serve"
   },

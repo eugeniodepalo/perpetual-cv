@@ -1,0 +1,215 @@
+{
+  "name": "Eugenio Depalo",
+  "title": "Senior Front-end Engineer",
+  "email": "eugeniodepalo@gmail.com",
+  "github": "eugeniodepalo",
+  "linkedin": "eugenio-depalo-4664472a",
+  "description1": "I am a passionate engineer who thrives on solving complex architectural challenges and technical systems at scale, while continuously seeking opportunities to grow and share knowledge.",
+  "description2": "With extensive experience architecting and leading development of products from concept to production, I excel at building high-impact software that addresses critical business needs while mentoring teams to achieve technical excellence.",
+  "preferences": "I value working with collaborative teams that balance technical innovation with business impact, and where empathy and knowledge sharing are part of the culture",
+  "skills": [
+    "TypeScript",
+    "React",
+    "React Native",
+    "Apollo",
+    "GraphQL",
+    "Node.js",
+    "Next.js",
+    "Remix",
+    "Redux",
+    "Ember.js",
+    "Ruby",
+    "Rails",
+    "Rust",
+    "PostgreSQL",
+    "Docker",
+    "Terraform",
+    "AWS",
+    "PHP",
+    "Bootstrap",
+    "Firebase",
+    "Redis",
+    "jQuery",
+    "Backbone",
+    "AngularJS",
+    ".NET"
+  ],
+  "learning": [
+    "AI",
+    "OS design",
+    "Rust",
+    ".NET",
+    "Embedded Systems"
+  ],
+  "languages": [
+    "English",
+    "Italian"
+  ],
+  "interests": [
+    "Fitness",
+    "Nutrition",
+    "Cooking",
+    "Open Source",
+    "Linux",
+    "Electronic Music"
+  ],
+  "coolestProject": "A React reconciler for building native Linux apps with GTK4",
+  "experience": [
+    {
+      "company": "Reward Gateway",
+      "role": "Senior Front-end Engineer",
+      "date": "2024 - present",
+      "url": "https://www.rewardgateway.com",
+      "technologies": ["PHP", "React", "TypeScript", "React Native", "Apollo"],
+      "achievements": [
+        "Architected and led the transformation of a legacy monolithic PHP codebase into a scalable modular monorepo using NX, Lerna, React, TypeScript, and Apollo, reducing build times and enabling parallel development",
+        "Led architecture and implementation of a standalone, PCI-compliant SPA checkout system, improving conversion rates by 15% while meeting strict security requirements",
+        "Established team-wide technical standards and mentorship program, resulting in faster onboarding for new developers and improved code quality metrics",
+        "Created and implemented cross-team technical development plans that aligned individual growth with company objectives",
+        "Drove full-stack feature development with a focus on performance optimization, reducing API response times and improving core user flows"
+      ]
+    },
+    {
+      "company": "Smart",
+      "role": "Senior React Developer",
+      "date": "2022 - 2023",
+      "url": "https://smart.co",
+      "technologies": ["React", "TypeScript", "GraphQL", "Node.js", "Apollo"],
+      "achievements": [
+        "Architected and implemented tenant-specific GraphQL schema abstractions that enabled scaling to many enterprise clients while maintaining performance",
+        "Led development of critical Remix application features that improved customer retention",
+        "Designed and implemented API services using Node.js and Rails that reduced integration complexities across multiple systems",
+        "Established standardized development environments using devcontainers that reduced onboarding time"
+      ]
+    },
+    {
+      "company": "Zapnito",
+      "role": "Senior Full-stack Developer (Contract)",
+      "date": "2021 - 2022",
+      "technologies": ["Ruby on Rails", "Ember"],
+      "achievements": [
+        "Designed and implemented scalable video conferencing architecture handling many concurrent users, with advanced recording and composition features that increased platform engagement"
+      ]
+    },
+    {
+      "company": "SafetyToolbox",
+      "role": "Senior Full-stack Developer (Contract)",
+      "date": "2020 - 2021",
+      "technologies": ["Ruby", "Ember"],
+      "achievements": [
+        "Led architectural improvements to the health and safety platform that enabled handling more concurrent users while reducing server costs"
+      ]
+    },
+    {
+      "company": "Zapnito",
+      "role": "Senior Full-stack Developer (Contract)",
+      "date": "2019 - 2020",
+      "technologies": ["Rails", "Ember"],
+      "achievements": [
+        "Architected and developed a scalable in-house conference system using Twilio and WebRTC that reduced third-party costs",
+        "Designed and implemented a real-time presence system that improved user engagement metrics"
+      ]
+    },
+    {
+      "company": "Smart Pension",
+      "role": "Senior Frontend Developer (Contract)",
+      "date": "2019",
+      "url": "https://smart.co",
+      "technologies": ["React", "TypeScript", "Redux", "Bootstrap", "Ember"],
+      "achievements": [
+        "Led cross-team migration from Materialize to Bootstrap, creating an implementation strategy that allowed incremental adoption without service disruption",
+        "Designed and implemented a comprehensive UI component library that accelerated development velocity across different product teams",
+        "Architected a scalable theming system enabling white-label solutions for enterprise clients"
+      ]
+    },
+    {
+      "company": "British Gas",
+      "role": "Senior Frontend Developer (Contract)",
+      "date": "2018",
+      "technologies": ["Ember"],
+      "achievements": [
+        "Led the architecture and development of a conversion-optimized multi-step form system",
+        "Designed and implemented a robust A/B testing framework that enabled data-driven UX decisions"
+      ]
+    },
+    {
+      "company": "Featurist",
+      "role": "Senior Frontend Developer (Contract)",
+      "date": "2017 - 2018",
+      "technologies": ["React", "Redis", "Firebase"],
+      "achievements": [
+        "Architected a versioning system for a collaborative editing platform using React/Redis that supported many concurrent editors",
+        "Led technical direction for Scribeasy educational platform, implementing performance optimizations"
+      ]
+    },
+    {
+      "company": "Kayako",
+      "role": "Senior Frontend Developer (Contract)",
+      "date": "2017 - 2018",
+      "technologies": ["Ember"],
+      "achievements": [
+        "Designed and implemented a flexible form rendering engine that reduced development time for new customer support features"
+      ]
+    },
+    {
+      "company": "Zapnito",
+      "role": "Senior Full-stack Developer (Contract)",
+      "date": "2016 - 2017",
+      "technologies": ["Rails", "Ember"],
+      "achievements": [
+        "Architected and implemented a scalable analytics dashboard for student progress tracking",
+        "Redesigned permission system that enabled granular access control"
+      ]
+    },
+    {
+      "company": "AlphaSights",
+      "role": "Senior Frontend Developer",
+      "date": "2014 - 2015",
+      "url": "https://alphasights.com",
+      "technologies": ["Rails", "Ember"],
+      "achievements": [
+        "Designed and developed a reusable data grid component",
+        "Led architecture and implementation of dashboard redesign using Ember.js"
+      ]
+    },
+    {
+      "company": "Listora",
+      "role": "Frontend Developer",
+      "date": "2014",
+      "technologies": ["AngularJS", "Firebase", "Clojure"],
+      "achievements": [
+        "Architected real-time event creation system using Firebase and AngularJS"
+      ]
+    },
+    {
+      "company": "Responsa",
+      "role": "Full-stack Developer",
+      "date": "2012 - 2014",
+      "url": "https://responsa.ai",
+      "technologies": ["Redis", "jQuery", "Postgres", "Backbone", "Rails"],
+      "achievements": [
+        "Designed and developed full-stack application architecture using Rails, PostgreSQL, and Redis that scaled to support growing customer base",
+        "Led performance optimization initiatives that improved application response time",
+        "Architected and implemented custom SSO authentication system that enabled enterprise client adoption"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Self-taught",
+      "degree": "Software Engineer"
+    }
+  ],
+  "projects": [
+    {
+      "name": "ranklab.gg",
+      "description": "VOD review platform. Co-founder. Written in Rust, Next.js and deployed to AWS with Terraform and Docker.",
+      "url": "https://web.archive.org/web/20230725082227/https://ranklab.gg/"
+    },
+    {
+      "name": "React GTK4 Reconciler",
+      "description": "A React reconciler for building native Linux apps with GTK4",
+      "url": "https://github.com/eugeniodepalo/react-native-gtk4"
+    }
+  ]
+}

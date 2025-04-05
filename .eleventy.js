@@ -1,7 +1,7 @@
-const postcss = require("postcss")
-const postcssrc = require("postcss-load-config")
+import postcss from "postcss"
+import postcssrc from "postcss-load-config"
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats("css,njk")
   eleventyConfig.addPassthroughCopy({ assets: "/" })
 
@@ -25,10 +25,8 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "_src",
-      output: "_site",
-      includes: "_includes",
-      layouts: "_layouts",
+      input: "src",
+      output: "dist",
     },
   }
 }
