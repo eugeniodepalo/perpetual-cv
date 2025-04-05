@@ -164,17 +164,6 @@
       ]
     },
     {
-      "company": "AlphaSights",
-      "role": "Senior Frontend Developer",
-      "date": "2014 - 2015",
-      "url": "https://alphasights.com",
-      "technologies": ["Rails", "Ember"],
-      "achievements": [
-        "Designed and developed a reusable data grid component",
-        "Led architecture and implementation of dashboard redesign using Ember.js"
-      ]
-    },
-    {
       "company": "Tallarium",
       "role": "Senior Frontend Developer (Contract)",
       "date": "Mar 2015 - Nov 2015",
@@ -195,6 +184,17 @@
         "Architected and implemented high-performance grid layouting system and client-side search engine using Lunr.js that maintained sub-100ms response times with 10,000+ items",
         "Designed and developed a scalable CMS architecture with Ember/Firebase that reduced content update times from hours to minutes",
         "Established automated deployment pipeline using S3, CloudFront and ember-cli-deploy that improved release frequency and reliability"
+      ]
+    },
+    {
+      "company": "AlphaSights",
+      "role": "Senior Frontend Developer",
+      "date": "2014 - 2015",
+      "url": "https://alphasights.com",
+      "technologies": ["Rails", "Ember"],
+      "achievements": [
+        "Designed and developed a reusable data grid component",
+        "Led architecture and implementation of dashboard redesign using Ember.js"
       ]
     },
     {
