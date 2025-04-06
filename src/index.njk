@@ -10,9 +10,12 @@
   <body class="bg-background text-content max-w-screen-xl mx-auto p-6 md:p-8">
     <header class="mb-12">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-        <div>
-          <h1 class="text-4xl font-bold text-primary">{{ name }}</h1>
-          <p class="text-xl text-secondary mt-2">{{ title }}</p>
+        <div class="flex items-center gap-4">
+          <img src="/images/avatar.webp" alt="Profile photo of {{ name }}" class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-primary"/>
+          <div>
+            <h1 class="text-4xl font-bold text-primary">{{ name }}</h1>
+            <p class="text-xl text-secondary mt-2">{{ title }}</p>
+          </div>
         </div>
         <div class="mt-4 md:mt-0">
           <nav class="flex flex-col sm:flex-row gap-2 sm:gap-4" aria-label="Contact information">
