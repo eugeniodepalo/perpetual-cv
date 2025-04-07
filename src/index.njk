@@ -55,12 +55,16 @@
               "hasOccupation": {
                 "@type": "Occupation",
                 "name": "{{ job.role }} at {{ job.company }}",
-                "estimatedSalary": "0",
+                "estimatedSalary": {
+                  "@type": "MonetaryAmount",
+                  "value": "{{ job.salary | default('0') }}",
+                  "currency": "{{ job.salaryCurrency | default('GBP') }}"
+                },
                 "occupationLocation": {
                   "@type": "AdministrativeArea",
                   "address": {
                     "@type": "PostalAddress",
-                    "addressLocality": "{{ location }}"
+                    "addressLocality": "{{ job.location }}"
                   }
                 },
                 "skills": [{% for tech in job.technologies %}

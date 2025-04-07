@@ -55,6 +55,7 @@
       "role": "Senior Front-end Engineer",
       "date": "2024 - present",
       "url": "https://www.rewardgateway.com",
+      "location": "London, UK",
       "technologies": ["PHP", "React", "TypeScript", "React Native", "Apollo"],
       "achievements": [
         "Architected and led the transformation of a legacy monolithic PHP codebase into a scalable modular monorepo using NX, Lerna, React, TypeScript, and Apollo, reducing build times and enabling parallel development",
@@ -68,6 +69,7 @@
       "role": "Senior React Developer",
       "date": "2022 - 2023",
       "url": "https://smart.co",
+      "location": "London, UK",
       "technologies": ["React", "TypeScript", "GraphQL", "Node.js", "Apollo", "Remix"],
       "achievements": [
         "Architected and implemented tenant-specific GraphQL schema abstractions that enabled scaling to many enterprise clients",
@@ -80,6 +82,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2021 - 2022",
       "url": "https://zapnito.com",
+      "location": "London, UK",
       "technologies": ["Ruby on Rails", "Ember.js"],
       "achievements": [
         "Designed and implemented scalable video conferencing architecture handling many concurrent users, with advanced recording and composition features that increased platform engagement"
@@ -90,6 +93,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2020 - 2021",
       "url": "https://safetytoolbox.co.uk",
+      "location": "London, UK",
       "technologies": ["Ruby", "Ember.js"],
       "achievements": [
         "Led architectural improvements to the health and safety platform that enabled handling more concurrent users"
@@ -100,6 +104,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2019 - 2020",
       "url": "https://zapnito.com",
+      "location": "London, UK",
       "technologies": ["Rails", "Ember.js"],
       "achievements": [
         "Architected and developed a scalable in-house conference system using Twilio and WebRTC that reduced third-party costs",
@@ -111,6 +116,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2019",
       "url": "https://smart.co",
+      "location": "London, UK",
       "technologies": ["React", "TypeScript", "Redux", "Bootstrap", "Ember.js"],
       "achievements": [
         "Led cross-team migration from Materialize to Bootstrap, creating an implementation strategy that allowed incremental adoption without service disruption",
@@ -123,6 +129,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2018",
       "url": "https://www.britishgas.co.uk",
+      "location": "Staines-upon-Thames, UK",
       "technologies": ["Ember.js"],
       "achievements": [
         "Led the architecture and development of a conversion-optimized multi-step form system",
@@ -134,6 +141,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2017 - 2018",
       "url": "https://featurist.co.uk",
+      "location": "London, UK",
       "technologies": ["React", "Redis", "Firebase"],
       "achievements": [
         "Architected a versioning system for a collaborative editing platform using React/Redis that supported many concurrent editors",
@@ -145,6 +153,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2017 - 2018",
       "url": "https://kayako.com",
+      "location": "London, UK",
       "technologies": ["Ember.js"],
       "achievements": [
         "Designed and implemented a flexible form rendering engine that reduced development time for new customer support features"
@@ -155,6 +164,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2016 - 2017",
       "url": "https://zapnito.com",
+      "location": "London, UK",
       "technologies": ["Rails", "Ember.js"],
       "achievements": [
         "Architected and implemented a scalable analytics dashboard for student progress tracking",
@@ -166,6 +176,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2015",
       "url": "https://tallarium.com",
+      "location": "London, UK",
       "technologies": ["Ember.js"],
       "achievements": [
         "Redesigned and optimized performance-critical list components using ember-collection, improving rendering performance for data-heavy views with thousands of items",
@@ -177,6 +188,7 @@
       "company": "GBH Design",
       "role": "Lead Developer (Contract)",
       "date": "2015",
+      "location": "London, UK",
       "technologies": ["Ember.js", "AWS"],
       "achievements": [
         "Architected and implemented high-performance grid layouting system and client-side search engine using Lunr.js that maintained sub-100ms response times with 10,000+ items",
@@ -189,6 +201,7 @@
       "role": "Senior Frontend Developer",
       "date": "2014 - 2015",
       "url": "https://alphasights.com",
+      "location": "London, UK",
       "technologies": ["Rails", "Ember.js"],
       "achievements": [
         "Designed and developed a reusable data grid component",
@@ -199,6 +212,7 @@
       "company": "Listora",
       "role": "Frontend Developer",
       "date": "2014",
+      "location": "London, UK",
       "technologies": ["AngularJS", "Firebase", "Clojure"],
       "achievements": [
         "Architected real-time event creation system using Firebase and AngularJS"
@@ -209,6 +223,7 @@
       "role": "Full-stack Developer",
       "date": "2012 - 2014",
       "url": "https://responsa.ai",
+      "location": "Roncade, Italy",
       "technologies": ["Redis", "jQuery", "Postgres", "Backbone", "Rails"],
       "achievements": [
         "Designed and developed full-stack application architecture using Rails, PostgreSQL, and Redis that scaled to support growing customer base",
