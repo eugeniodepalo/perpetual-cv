@@ -3,33 +3,115 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="{{ name }} - {{ title }}. Professional resume and portfolio."/>
+    <meta name="author" content="{{ name }}"/>
+    <meta name="keywords" content="resume, CV, portfolio, {{ skills | join(', ') }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ name }} - {{ title }}"/>
+    <meta property="og:description" content="{{ description1 }}"/>
+    <meta property="og:image" content="/images/avatar.webp"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{{ name }} - {{ title }}"/>
+    <meta name="twitter:description" content="{{ description1 }}"/>
+    <meta name="twitter:image" content="/images/avatar.webp"/>
+    <link rel="canonical" href="{{ website }}"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.ico"/>
     <link rel="stylesheet" href="/index.css"/>
-    <title>{{ name }}</title>
+    <title>{{ name }} | {{ title }}</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ name }}",
+        "jobTitle": "{{ title }}",
+        "description": "{{ description1 }}",
+        "image": "{{ website }}/images/avatar.webp",
+        "url": "{{ website }}",
+        "email": "{{ email }}",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "{{ location }}"
+        },
+        "mainEntityOfPage": "{{ website }}",
+        "knowsLanguage": [
+          {% for language in languages %}
+            "{{ language }}"{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ],
+        "skills": [
+          {% for skill in skills %}
+            "{{ skill }}"{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "{{ experience[0].company }}",
+          "url": "{{ experience[0].url }}"
+        },
+        "hasOccupation": [
+          {% for job in experience %}
+            {
+              "@type": "Role",
+              "hasOccupation": {
+                "@type": "Occupation",
+                "name": "{{ job.role }}",
+                "skills": [{% for tech in job.technologies %}
+                    "{{ tech }}"{% if not loop.last %},{% endif %}
+                  {% endfor %}]
+              },
+              {% set dateParts = job.date.split(' - ') %}
+              "startDate": "{{ dateParts[0] }}"{% if dateParts.length > 1 and dateParts[1] != 'present' %},
+                "endDate": "{{ dateParts[1] }}"{% endif %}
+            }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ],
+        "knowsAbout": [
+          {% for interest in interests %}
+            "{{ interest }}"{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ],
+        "alumniOf": [
+          {% for edu in education %}
+            {
+              "@type": "Organization",
+              "name": "{{ edu.institution }}"
+            }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ],
+        "sameAs": ["https://github.com/{{ github }}", "https://linkedin.com/in/{{ linkedin }}"]
+      }
+    </script>
   </head>
   <body class="bg-background text-content max-w-screen-xl mx-auto p-6 md:p-8">
-    <header class="mb-12">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-2 focus:bg-accent focus:text-white">Skip to content</a>
+    <header class="mb-12" role="banner">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between">
         <div class="flex items-center gap-4">
           <img src="/images/avatar.webp" alt="Profile photo of {{ name }}" class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-primary"/>
           <div>
             <h1 class="text-4xl font-bold text-primary">{{ name }}</h1>
             <p class="text-xl text-secondary mt-2">{{ title }}</p>
+            <p class="text-sm text-secondary mt-1">
+              <span class="inline-flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin" aria-hidden="true" focusable="false"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                {{ location }}
+              </span>
+            </p>
           </div>
         </div>
-        <div class="mt-4 md:mt-0">
-          <nav class="flex flex-col sm:flex-row gap-2 sm:gap-4" aria-label="Contact information">
-            <a href="mailto:{{ email }}" class="hover:text-accent flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Email
+        <div class="mt-6 md:mt-0">
+          <nav class="flex flex-row gap-4" aria-label="Contact information">
+            <a href="mailto:{{ email }}" class="hover:text-accent flex items-center gap-1" aria-label="Email {{ name }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Email</span>
             </a>
-            <a href="https://github.com/{{ github }}" class="hover:text-accent flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-              GitHub
+            <a href="https://github.com/{{ github }}" class="hover:text-accent flex items-center gap-1" aria-label="{{ name }}'s GitHub profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github" aria-hidden="true" focusable="false"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/{{ linkedin }}" class="hover:text-accent flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
+            <a href="https://linkedin.com/in/{{ linkedin }}" class="hover:text-accent flex items-center gap-1" aria-label="{{ name }}'s LinkedIn profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
             </a>
           </nav>
         </div>
@@ -39,9 +121,9 @@
         <p class="mb-2">{{ description2 }}</p>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <aside class="md:col-span-1">
+        <aside class="md:col-span-1" role="complementary">
           <section class="mb-8" aria-labelledby="skills-heading">
             <h2 id="skills-heading" class="text-xl font-semibold mb-3 text-primary border-b border-divider pb-1">Skills</h2>
             <ul class="flex flex-wrap gap-2">
@@ -108,7 +190,9 @@
                   <div class="flex flex-col sm:flex-row sm:items-center justify-between">
                     <h3 class="text-lg font-semibold">
                       {% if job.url %}
-                        <a href="{{ job.url }}" class="hover:text-accent">{{ job.company }}</a>
+                        <a href="{{ job.url }}" class="hover:text-accent">
+                          {{ job.company }}
+                        </a>
                       {% else %}
                         {{ job.company }}
                       {% endif %}
@@ -139,9 +223,9 @@
         </section>
       </div>
     </main>
-    <footer class="mt-12 pt-6 border-t border-divider text-center text-sm text-secondary">
-      <p class="mb-2">Like the format of this CV? <a href="https://github.com/eugeniodepalo/perpetual-cv" class="hover:text-accent">Fork it on GitHub</a>.
-        <p>Made with ❤️ by {{ name }}.</p>
-      </footer>
-    </body>
-  </html>
+    <footer class="mt-12 pt-6 border-t border-divider text-center text-sm text-secondary" role="contentinfo">
+      <p class="mb-2">Like the format of this CV? <a href="https://github.com/eugeniodepalo/perpetual-cv" class="hover:text-accent">Fork it on GitHub</a>.</p>
+      <p>Made with <span aria-label="love">❤️</span> by {{ name }}.</p>
+    </footer>
+  </body>
+</html>
