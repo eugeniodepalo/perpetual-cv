@@ -15,14 +15,4 @@ A simple CV template built with:
 
 ## Customization
 
-Edit the data in `src/cv.11tydata.json` to update your CV information.
-
-## Static Build
-
-To generate a static build, run:
-
-```bash
-node scripts/build-static.js
-```
-
-This will create a static site in the `dist` directory.
+Edit the data in `src/index.11tydata.json` to update your CV information.
