@@ -54,7 +54,15 @@
               "@type": "Role",
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "{{ job.role }}",
+                "name": "{{ job.role }} at {{ job.company }}",
+                "estimatedSalary": "0",
+                "occupationLocation": {
+                  "@type": "AdministrativeArea",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "{{ location }}"
+                  }
+                },
                 "skills": [{% for tech in job.technologies %}
                     "{{ tech }}"{% if not loop.last %},{% endif %}
                   {% endfor %}]
