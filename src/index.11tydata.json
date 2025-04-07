@@ -7,7 +7,7 @@
   "github": "eugeniodepalo",
   "linkedin": "eugenio-depalo-4664472a",
   "description1": "I am a passionate engineer who thrives on solving complex architectural challenges, while continuously seeking opportunities to grow.",
-  "description2": "I value working with collaborative teams that balance technical innovation with business impact, and where empathy and knowledge sharing are part of the culture.",
+  "description2": "I value working with collaborative teams where empathy and knowledge sharing are part of the culture.",
   "skills": [
     "TypeScript",
     "React",
@@ -59,8 +59,8 @@
       "achievements": [
         "Architected and led the transformation of a legacy monolithic PHP codebase into a scalable modular monorepo using NX, Lerna, React, TypeScript, and Apollo, reducing build times and enabling parallel development",
         "Led architecture and implementation of a standalone, PCI-compliant SPA checkout system, improving conversion rates by 15% while meeting strict security requirements",
-        "Established team-wide technical standards and mentorship program, resulting in faster onboarding for new developers and improved code quality metrics",
-        "Created and implemented cross-team technical development plans that aligned individual growth with company objectives"
+        "Established team-wide technical standards and mentorship program, resulting in faster onboarding for new developers and improved DX",
+        "Created and maintained a token-based, cross-product design system in close collaboration with the design team, improving consistency and enabling rapid development of new features"
       ]
     },
     {
@@ -68,11 +68,10 @@
       "role": "Senior React Developer",
       "date": "2022 - 2023",
       "url": "https://smart.co",
-      "technologies": ["React", "TypeScript", "GraphQL", "Node.js", "Apollo"],
+      "technologies": ["React", "TypeScript", "GraphQL", "Node.js", "Apollo", "Remix"],
       "achievements": [
-        "Architected and implemented tenant-specific GraphQL schema abstractions that enabled scaling to many enterprise clients while maintaining performance",
-        "Led development of critical Remix application features that improved customer retention",
-        "Designed and implemented API services using Node.js and Rails that reduced integration complexities across multiple systems",
+        "Architected and implemented tenant-specific GraphQL schema abstractions that enabled scaling to many enterprise clients",
+        "Led development of critical Remix application features",
         "Established standardized development environments using devcontainers that reduced onboarding time"
       ]
     },
@@ -81,7 +80,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2021 - 2022",
       "url": "https://zapnito.com",
-      "technologies": ["Ruby on Rails", "Ember"],
+      "technologies": ["Ruby on Rails", "Ember.js"],
       "achievements": [
         "Designed and implemented scalable video conferencing architecture handling many concurrent users, with advanced recording and composition features that increased platform engagement"
       ]
@@ -91,9 +90,9 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2020 - 2021",
       "url": "https://safetytoolbox.co.uk",
-      "technologies": ["Ruby", "Ember"],
+      "technologies": ["Ruby", "Ember.js"],
       "achievements": [
-        "Led architectural improvements to the health and safety platform that enabled handling more concurrent users while reducing server costs"
+        "Led architectural improvements to the health and safety platform that enabled handling more concurrent users"
       ]
     },
     {
@@ -101,7 +100,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2019 - 2020",
       "url": "https://zapnito.com",
-      "technologies": ["Rails", "Ember"],
+      "technologies": ["Rails", "Ember.js"],
       "achievements": [
         "Architected and developed a scalable in-house conference system using Twilio and WebRTC that reduced third-party costs",
         "Designed and implemented a real-time presence system that improved user engagement metrics"
@@ -112,7 +111,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2019",
       "url": "https://smart.co",
-      "technologies": ["React", "TypeScript", "Redux", "Bootstrap", "Ember"],
+      "technologies": ["React", "TypeScript", "Redux", "Bootstrap", "Ember.js"],
       "achievements": [
         "Led cross-team migration from Materialize to Bootstrap, creating an implementation strategy that allowed incremental adoption without service disruption",
         "Designed and implemented a comprehensive UI component library that accelerated development velocity across different product teams",
@@ -124,7 +123,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2018",
       "url": "https://www.britishgas.co.uk",
-      "technologies": ["Ember"],
+      "technologies": ["Ember.js"],
       "achievements": [
         "Led the architecture and development of a conversion-optimized multi-step form system",
         "Designed and implemented a robust A/B testing framework that enabled data-driven UX decisions"
@@ -138,7 +137,7 @@
       "technologies": ["React", "Redis", "Firebase"],
       "achievements": [
         "Architected a versioning system for a collaborative editing platform using React/Redis that supported many concurrent editors",
-        "Led technical direction for Scribeasy educational platform, implementing performance optimizations"
+        "Led technical direction for the Scribeasy educational platform, implementing performance optimizations"
       ]
     },
     {
@@ -146,7 +145,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2017 - 2018",
       "url": "https://kayako.com",
-      "technologies": ["Ember"],
+      "technologies": ["Ember.js"],
       "achievements": [
         "Designed and implemented a flexible form rendering engine that reduced development time for new customer support features"
       ]
@@ -156,7 +155,7 @@
       "role": "Senior Full-stack Developer (Contract)",
       "date": "2016 - 2017",
       "url": "https://zapnito.com",
-      "technologies": ["Rails", "Ember"],
+      "technologies": ["Rails", "Ember.js"],
       "achievements": [
         "Architected and implemented a scalable analytics dashboard for student progress tracking",
         "Redesigned permission system that enabled granular access control"
@@ -167,7 +166,7 @@
       "role": "Senior Frontend Developer (Contract)",
       "date": "2015",
       "url": "https://tallarium.com",
-      "technologies": ["Ember"],
+      "technologies": ["Ember.js"],
       "achievements": [
         "Redesigned and optimized performance-critical list components using ember-collection, improving rendering performance for data-heavy views with thousands of items",
         "Architected reusable chat UI component system that reduced development time for new communication features",
@@ -178,7 +177,7 @@
       "company": "GBH Design",
       "role": "Lead Developer (Contract)",
       "date": "2015",
-      "technologies": ["Ember", "AWS"],
+      "technologies": ["Ember.js", "AWS"],
       "achievements": [
         "Architected and implemented high-performance grid layouting system and client-side search engine using Lunr.js that maintained sub-100ms response times with 10,000+ items",
         "Designed and developed a scalable CMS architecture with Ember/Firebase that reduced content update times from hours to minutes",
@@ -190,7 +189,7 @@
       "role": "Senior Frontend Developer",
       "date": "2014 - 2015",
       "url": "https://alphasights.com",
-      "technologies": ["Rails", "Ember"],
+      "technologies": ["Rails", "Ember.js"],
       "achievements": [
         "Designed and developed a reusable data grid component",
         "Led architecture and implementation of dashboard redesign using Ember.js"
@@ -213,7 +212,6 @@
       "technologies": ["Redis", "jQuery", "Postgres", "Backbone", "Rails"],
       "achievements": [
         "Designed and developed full-stack application architecture using Rails, PostgreSQL, and Redis that scaled to support growing customer base",
-        "Led performance optimization initiatives that improved application response time",
         "Architected and implemented custom SSO authentication system that enabled enterprise client adoption"
       ]
     }
