@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="{{ name }} - {{ title }}. Professional resume and portfolio."/>
-    <meta name="author" content="{{ name }}"/>
-    <meta name="keywords" content="resume, CV, portfolio, {{ skills | join(', ') }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="{{ name }} - {{ title }}"/>
-    <meta property="og:description" content="{{ description1 }}"/>
-    <meta property="og:image" content="{{ website }}/images/avatar.webp"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="{{ name }} - {{ title }}"/>
-    <meta name="twitter:description" content="{{ description1 }}"/>
-    <meta name="twitter:image" content="{{ website }}/images/avatar.webp"/>
-    <link rel="canonical" href="{{ website }}"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico"/>
-    <link rel="stylesheet" href="/index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ name }} - {{ title }}. Professional resume and portfolio.">
+    <meta name="author" content="{{ name }}">
+    <meta name="keywords" content="resume, CV, portfolio, {{ skills | join(', ') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ name }} - {{ title }}">
+    <meta property="og:description" content="{{ description1 }}">
+    <meta property="og:image" content="{{ website }}/images/avatar.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ name }} - {{ title }}">
+    <meta name="twitter:description" content="{{ description1 }}">
+    <meta name="twitter:image" content="{{ website }}/images/avatar.webp">
+    <link rel="canonical" href="{{ website }}">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <link rel="stylesheet" href="/index.css">
     <title>{{ name }} | {{ title }}</title>
     <script type="application/ld+json">
       {
@@ -84,10 +84,10 @@
   </head>
   <body class="bg-background text-content max-w-screen-xl mx-auto p-6 md:p-8">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-2 focus:bg-accent focus:text-white">Skip to content</a>
-    <header class="mb-12" role="banner">
+    <header class="mb-12">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between">
         <div class="flex items-center gap-4">
-          <img src="/images/avatar.webp" alt="Profile photo of {{ name }}" class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-primary"/>
+          <img src="/images/avatar.webp" alt="Profile photo of {{ name }}" class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-primary">
           <div>
             <h1 class="text-4xl font-bold text-primary">{{ name }}</h1>
             <p class="text-xl text-secondary mt-2">{{ title }}</p>
@@ -123,7 +123,7 @@
     </header>
     <main id="main-content">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <aside class="md:col-span-1" role="complementary">
+        <aside class="md:col-span-1">
           <section class="mb-8" aria-labelledby="skills-heading">
             <h2 id="skills-heading" class="text-xl font-semibold mb-3 text-primary border-b border-divider pb-1">Skills</h2>
             <ul class="flex flex-wrap gap-2">
@@ -223,9 +223,9 @@
         </section>
       </div>
     </main>
-    <footer class="mt-12 pt-6 border-t border-divider text-center text-sm text-secondary" role="contentinfo">
+    <footer class="mt-12 pt-6 border-t border-divider text-center text-sm text-secondary">
       <p class="mb-2">Like the format of this CV? <a href="https://github.com/eugeniodepalo/perpetual-cv" class="hover:text-accent">Fork it on GitHub</a>.</p>
-      <p>Made with <span aria-label="love">❤️</span> by {{ name }}.</p>
+      <p>Made with ❤️ by {{ name }}.</p>
     </footer>
   </body>
 </html>
