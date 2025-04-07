@@ -52,25 +52,8 @@
           {% for job in experience %}
             {
               "@type": "Role",
-              "hasOccupation": {
-                "@type": "Occupation",
-                "name": "{{ job.role }} at {{ job.company }}",
-                "estimatedSalary": {
-                  "@type": "MonetaryAmountDistribution",
-                  "value": "{{ job.salary | default('0') }}",
-                  "currency": "{{ job.salaryCurrency | default('GBP') }}"
-                },
-                "occupationLocation": {
-                  "@type": "City",
-                  "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "{{ job.location }}"
-                  }
-                },
-                "skills": [{% for tech in job.technologies %}
-                    "{{ tech }}"{% if not loop.last %},{% endif %}
-                  {% endfor %}]
-              },
+              "roleName": "{{ job.role }}",
+              "name": "{{ job.role }} at {{ job.company }}",
               {% set dateParts = job.date.split(' - ') %}
               "startDate": "{{ dateParts[0] }}"{% if dateParts.length > 1 and dateParts[1] != 'present' %},
                 "endDate": "{{ dateParts[1] }}"{% endif %}
