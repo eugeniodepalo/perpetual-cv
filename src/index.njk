@@ -56,7 +56,7 @@
                 "@type": "Occupation",
                 "name": "{{ job.role }} at {{ job.company }}",
                 "estimatedSalary": {
-                  "@type": "MonetaryAmount",
+                  "@type": "MonetaryAmountDistribution",
                   "value": "{{ job.salary | default('0') }}",
                   "currency": "{{ job.salaryCurrency | default('GBP') }}"
                 },
