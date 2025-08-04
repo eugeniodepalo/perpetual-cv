@@ -73,7 +73,16 @@
             }{% if not loop.last %},{% endif %}
           {% endfor %}
         ],
-        "sameAs": ["https://github.com/{{ github }}", "https://linkedin.com/in/{{ linkedin }}"]
+        "sameAs": ["https://github.com/{{ github }}", "https://linkedin.com/in/{{ linkedin }}"],
+        "additionalProperty": [
+          {% for item in professional_development %}
+            {
+              "@type": "PropertyValue",
+              "name": "Professional Development",
+              "value": "{{ item }}"
+            }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
       }
     </script>
   </head>
@@ -157,8 +166,19 @@
               <div class="mb-3">
                 <h3 class="font-medium">{{ edu.institution }}</h3>
                 <p class="text-sm">{{ edu.degree }}</p>
+                {% if edu.note %}
+                  <p class="text-xs text-secondary mt-1">{{ edu.note }}</p>
+                {% endif %}
               </div>
             {% endfor %}
+          </section>
+          <section class="mb-8" aria-labelledby="professional-development-heading">
+            <h2 id="professional-development-heading" class="text-xl font-semibold mb-3 text-primary border-b border-divider pb-1">Professional Development</h2>
+            <ul class="list-disc pl-5 space-y-1">
+              {% for item in professional_development %}
+                <li class="text-sm">{{ item }}</li>
+              {% endfor %}
+            </ul>
           </section>
           <section aria-labelledby="projects-heading">
             <h2 id="projects-heading" class="text-xl font-semibold mb-3 text-primary border-b border-divider pb-1">Projects</h2>
@@ -177,6 +197,35 @@
           </section>
         </aside>
         <section class="md:col-span-2" aria-labelledby="experience-heading">
+          <section class="mb-8" aria-labelledby="technical-leadership-heading">
+            <h2 id="technical-leadership-heading" class="text-2xl font-semibold mb-6 text-primary border-b border-divider pb-2">Technical Leadership</h2>
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-lg font-semibold mb-3 text-primary">Architecture & Decision Making</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                  {% for item in technical_leadership.architecture_decision_making %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-3 text-primary">Team Enablement & Mentorship</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                  {% for item in technical_leadership.team_enablement_mentorship %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-3 text-primary">Cross-functional Collaboration</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                  {% for item in technical_leadership.cross_functional_collaboration %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </section>
           <h2 id="experience-heading" class="text-2xl font-semibold mb-6 text-primary border-b border-divider pb-2">Work Experience</h2>
           <div class="space-y-8">
             {% for job in experience %}
